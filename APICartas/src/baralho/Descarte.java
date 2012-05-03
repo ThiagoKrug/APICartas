@@ -10,18 +10,23 @@ import java.util.Stack;
  *
  * @author thiago
  */
-public class Descarte extends Baralho {
-
-    public Descarte(Stack<Carta> descarte) {
-        super(descarte);
-    }
+public class Descarte {
+    
+    private Stack<Carta> baralho;
 
     public Descarte() {
-        super(new Stack<Carta>());
+        this.baralho = new Stack<Carta>();
     }
     
-    @Override
     public boolean addCarta(Carta carta) {
-        return super.addCarta(carta);
+        Carta verifica = this.baralho.push(carta);
+        if (verifica != null) {
+            return true;
+        }
+        return false;
+    }
+    
+    public Carta verCarta(int posicao) {
+        return this.baralho.get(posicao);
     }
 }

@@ -17,9 +17,6 @@ public class Main {
 
     public static void main(String[] args) {
         Baralho baralho = new Baralho();
-        System.out.println(baralho.size()+"\n"+baralho.toString());
-        baralho.cortar(30);
-        System.out.println(baralho.size()+"\n"+baralho.toString());
         Descarte descarte = new Descarte();
         descarte.addCarta(new Carta(1, Naipe.COPAS));
         
