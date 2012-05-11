@@ -68,6 +68,12 @@ public class Baralho {
         Collections.shuffle(this.baralho);
     }
 
+    /**
+     * Corta o baralho, a partir de uma posição informada
+     * @param corte posição para cortar o baralho
+     * @return true se o baralho for cortado certo, false caso contrário;
+     * 
+     */
     public boolean cortar(int corte) {
         boolean retorno = false;
         List corteAbaixo = this.baralho.subList(0, corte);
@@ -83,19 +89,34 @@ public class Baralho {
         return retorno;
     }
 
+    /**
+     * Metodo que retorna a primeira carta do baralho
+     * @return a primeira carta do baralho
+     */
     public Carta getPrimeiraCarta() {
-        return this.baralho.pop();
+        return this.baralho.pop(); 
     }
 
+    /**
+     * Retorna a ultima carta do baralho
+     * @return a ultima carta do baralho
+     */
     public Carta getUltimaCarta() {
         return this.baralho.remove(0);
     }
 
+    /**
+     * Metodo que passa a primeira carta do baralho para a ultima posição
+     */
     public void passarPrimeiraCartaParaUltimaPosicao() {
         Carta carta = this.getPrimeiraCarta();
         this.baralho.insertElementAt(carta, 0);
     }
 
+    /**
+     * Metodo que converte o baralho em uma String
+     * @return saida String com o baralho
+     */
     @Override
     public String toString() {
         String saida = "";

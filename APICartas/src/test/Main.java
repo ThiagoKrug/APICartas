@@ -15,6 +15,10 @@ import baralho.Naipe;
  */
 public class Main {
 
+    /**
+     * Metodo main
+     * @param args 
+     */
     public static void main(String[] args) {
         Baralho baralho = new Baralho();
         Descarte descarte = new Descarte();

@@ -9,5 +9,20 @@ package baralho;
  * @author thiago
  */
 public enum Naipe {
-    COPAS, OUROS, ESPADAS, PAUS
+    /**
+     * Naipe Copas
+     */
+    COPAS,
+    /**
+     * Naipe Ouros
+     */
+    OUROS, 
+    /**
+     * Naipe Espadas
+     */
+    ESPADAS, 
+    /**
+     * Naipe Paus
+     */
+    PAUS
 }
