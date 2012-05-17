@@ -21,33 +21,18 @@ Foi usado para a construção da biblioteca o construtor Apache Ant
 <http://ant.apache.org/>. É necessário que ele esteja instalado para que seja
 construído.
 Para construir a biblioteca, acesse o terminal/command, vá até a pasta que possui
-o arquivo pom.xml, e use o comando mvn clean install javadoc:jar site -e. Ele
-vai baixar as dependências necessárias para o maven funcionar. Após concluída
-a construção, será criada uma pasta target, que vai conter o .jar da biblioteca,
-o .jar do javadoc, o site com os dados do projeto, e o site do javadoc.
-Caso aconteça algum erro, está sendo enviado os jars da biblioteca e do javadoc,
-o site e o site do javadoc compactados juntamente com o código na pasta deployed, 
-para que a biblioteca seja avaliada.
+o arquivo build.xml, e use o comando "ant". Após concluída a construção, será criada
+uma pasta build, que vai conter o .jar da biblioteca. O site do javadoc ficará na
+pasta docs/api/.
 
 
 LOCALIZAÇÃO DOS ARQUIVOS
 
 código-fonte: ${repositorio}/APICartas/APICartas/src/
-pom.xml do maven: ${repositorio}/APICartas/APICartas/pom.xml
+build.xml do ant: ${repositorio}/APICartas/APICartas/build.xml
 
-jar da biblioteca: ${repositorio}/APICartas/APICartas/deployed/apicartas-1.0.jar
-jar do javadoc: ${repositorio}/APICartas/APICartas/deployed/apicartas-1.0-javadoc.jar
-site: ${repositorio}/APICartas/APICartas/deployed/site/index.html
-site do javadoc: ${repositorio}/APICartas/APICartas/deployed/apidocs/index.html
-
-jar da biblioteca gerado pelo maven: ${repositorio}/APICartas/APICartas/target/apicartas-1.0.jar
-jar do javadoc gerado pelo maven: ${repositorio}/APICartas/APICartas/target/apicartas-1.0-javadoc.jar
-site gerado pelo maven: ${repositorio}/APICartas/APICartas/target/site/index.html
-site do javadoc gerado pelo maven: ${repositorio}/APICartas/APICartas/target/apidocs/index.html
-
-ps: todos os arquivos foram gerados pelo maven, os que estão na pasta target
-foram gerados no localmente nesse momento. Os da pasta deployed, foram gerados na
-minha máquina.
+jar da biblioteca: ${repositorio}/APICartas/APICartas/build/apicartas-1.0.jar
+site do javadoc: ${repositorio}/APICartas/APICartas/docs/api/index.html
 
 
 USO DA BIBLIOTECA
