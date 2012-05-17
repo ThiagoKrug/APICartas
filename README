@@ -17,12 +17,12 @@ se for removida dele).
 
 CONSTRUÇÃO DA BIBLIOTECA
 
-Foi usado para a construção da biblioteca o construtor Apache Maven
-<http://maven.apache.org/>. É necessário que ele esteja instalado para que seja
+Foi usado para a construção da biblioteca o construtor Apache Ant
+<http://ant.apache.org/>. É necessário que ele esteja instalado para que seja
 construído.
 Para construir a biblioteca, acesse o terminal/command, vá até a pasta que possui
 o arquivo pom.xml, e use o comando mvn clean install javadoc:jar site -e. Ele
-vai baixar as dependências necessárias para o maven funcionar. Após a concluída
+vai baixar as dependências necessárias para o maven funcionar. Após concluída
 a construção, será criada uma pasta target, que vai conter o .jar da biblioteca,
 o .jar do javadoc, o site com os dados do projeto, e o site do javadoc.
 Caso aconteça algum erro, está sendo enviado os jars da biblioteca e do javadoc,
