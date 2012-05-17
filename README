@@ -22,17 +22,16 @@ Foi usado para a construção da biblioteca o construtor Apache Ant
 construído.
 Para construir a biblioteca, acesse o terminal/command, vá até a pasta que possui
 o arquivo build.xml, e use o comando "ant". Após concluída a construção, será criada
-uma pasta build, que vai conter o .jar da biblioteca. O site do javadoc ficará na
-pasta docs/api/.
+uma pasta dist, que vai conter o .jar da biblioteca. O site do javadoc ficará na
+pasta dist/javadoc/index.html.
 
 
 LOCALIZAÇÃO DOS ARQUIVOS
 
 código-fonte: ${repositorio}/APICartas/APICartas/src/
 build.xml do ant: ${repositorio}/APICartas/APICartas/build.xml
-
-jar da biblioteca: ${repositorio}/APICartas/APICartas/build/apicartas-1.0.jar
-site do javadoc: ${repositorio}/APICartas/APICartas/docs/api/index.html
+jar da biblioteca: ${repositorio}/APICartas/APICartas/dist/APICartas.jar
+site do javadoc: ${repositorio}/APICartas/APICartas/dist/javadoc/index.html
 
 
 USO DA BIBLIOTECA
